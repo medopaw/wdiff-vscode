@@ -1,0 +1,40 @@
+{
+    "name": "wdiff",
+    "displayName": "wdiff",
+    "description": "Syntax highlighting for wdiff files.",
+    "version": "0.0.1",
+    "publisher": "Med0paW",
+    "license": "MIT",
+    "author": "Med0paW <medopaw@gmail.com>",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/medopaw/wdiff-vscode"
+    },
+    "bugs": {
+      "url": "https://github.com/medopaw/wdiff-vscode/issues"
+    },
+    "engines": {
+        "vscode": "^0.10.10"
+    },
+    "keywords": [
+      "wdiff",
+      "Visual Studio Code",
+      "VSCode"
+    ],
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "wdiff",
+            "aliases": ["Wdiff", "wdiff"],
+            "extensions": [".wdiff"],
+            "configuration": "./wdiff.configuration.json"
+        }],
+        "grammars": [{
+            "language": "wdiff",
+            "scopeName": "source.wdiff",
+            "path": "./syntaxes/wdiff.tmGrammar.json"
+        }]
+    }
+}
